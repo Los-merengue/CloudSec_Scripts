@@ -91,5 +91,5 @@ To contribute:
 
 ## Authors
 
-- [Emeka Michael Nzeopara](https://github.com/Los-merengue)
+[Emeka Michael Nzeopara](https://github.com/Los-merengue)
 
