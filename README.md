@@ -1,14 +1,7 @@
-# Rust Newsletter Service
-![CI](https://github.com/Ejedavy/newsletter/actions/workflows/ci.yaml/badge.svg)
-![Test](https://github.com/Ejedavy/newsletter/actions/workflows/test.yaml/badge.svg)
-![Audit](https://github.com/Ejedavy/newsletter/actions/workflows/audit.yaml/badge.svg)
-
+# Scripts Security 
 A robust newsletter service written in Rust, designed for efficiency and reliability.
 
 <!-- Badges -->
-
-
-![Newsletter](https://www.activecampaign.com/wp-content/uploads/2023/08/Newsletter.jpg)
 
 ## Description
 
@@ -63,14 +56,14 @@ Replace the values with your actual database credentials and SMTP settings.
 Run the program with:
 
 ```bash
-cargo run
+
 ```
 
 
 Run tests with:
 
 ```bash
-cargo test
+
 ```
 
 
@@ -78,10 +71,10 @@ cargo test
 
 After starting the service, it will be listening for requests to handle newsletter subscriptions and sending emails.
 
-### API Endpoints
+### Usage Samples
 
-- `POST /subscriptions` - for adding new subscribers
-- `POST /newsletters` - for sending out a newsletter to all subscribers
+- 
+- 
 
 ## Contributing
 
@@ -98,5 +91,5 @@ To contribute:
 
 ## Authors
 
-- David Eje(https://github.com/ejedavy)
+- ![Emeka Michael Nzeopara](https://github.com/Los-merengue)
 
