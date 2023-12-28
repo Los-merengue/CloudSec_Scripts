@@ -45,4 +45,4 @@ echo -e "[*] Checking if any virtual MFA devices configured in the account.\n"
 
 aws iam list-virtual-mfa-devices
 
-echo -e "[*] script executed successfully. \n"
+echo -e "[*] Script executed successfully. \n"
