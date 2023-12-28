@@ -12,3 +12,12 @@ This is essential to prevent the likes of Bruteforce Attacks.
 Author: Emeka Michael Nzeopara
 
 '
+
+time_map=$(date +"%m-%d-%Y");
+
+echo -e "[*] Starting Password Policy Check Script execution at: $time_map\n"
+
+
+# Dumping the Password Policy  .
+
+echo -e "[*] Getting the Password Policy Configuration\n"
