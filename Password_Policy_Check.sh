@@ -21,3 +21,6 @@ echo -e "[*] Starting Password Policy Check Script execution at: $time_map\n"
 # Dumping the Password Policy  .
 
 echo -e "[*] Getting the Password Policy Configuration\n"
+
+aws iam get-account-password-policy --output json
+
