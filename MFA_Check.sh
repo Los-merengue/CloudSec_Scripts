@@ -16,9 +16,9 @@ echo -e "[*] Starting script execution at: $time_map\n"
 
 # Dump the IAM users with Username, UserId, Last_Used Password and ARN.
 
-echo -e "[*] Dumping the IAM Users with - username, UserId, Last_Used Password and ARN"
+echo -e "[*] Dumping the IAM Users with - username, UserId, Last_Used Password and ARN\n"
 
-aws iam list-users --output table --query 'User[*].[UserName,UserId,PasswordLastUsed,Arn]'
+aws iam list-users --output table --query 'User[*].[UserName,UserId,PasswordLastUsed,Arn]\n'
 
 # Dump this same information in a text file
 
