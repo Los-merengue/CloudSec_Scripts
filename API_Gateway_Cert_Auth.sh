@@ -25,15 +25,17 @@ echo -e "[*] Starting API Gateway Client-Side Certificates For Authenticity Scri
 
 echo -e "[*] Dumping the API Gateway ID\n"
 
-aws apigateway get-rest-apis --region us-west-2 --output json --query 'items[*].id'
+aws apigateway get-rest-apis --region us-west-2 --output text --query 'items[*].id' > API_id.txt
+
+# Getting the Stages and Information of the API in these stages
+
+while IFS= read -r line; do echo -e "$line\n"; aws apigateway get-stages --region us-west-2 --rest-api-id $line \
+ --query 'item[?(stageName=='Staging')].clientCertificateId'; echo -e "\n--------------------------"; done < API_id.txt
 
 
+while IFS= read -r line; do echo -e "$line\n"; aws apigateway get-stages --region us-west-2 --rest-api-id $line \
+ --query 'item[?(stageName=='Development')].clientCertificateId'; echo -e "\n--------------------------"; done < API_id.txt
 
 
-# Dump only the Creation Date of the AccessKeys 
-
-echo -e "[*] Dumping the User's Creation Dates\n"
-
-aws iam list-users --output text --query 'Users[*].[UserName,CreateDate]'
 
 echo -e "[*]=====COMPLETED EXECUTION OF THE PROGRAM=====[*]\n"
