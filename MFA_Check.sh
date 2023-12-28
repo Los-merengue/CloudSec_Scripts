@@ -34,10 +34,9 @@ fi
 
 echo -e "\n[*] Checking the Multifactor authentication for dumped IAM users \n"
 
-while IFS= read -r line; do echo -e "$line\n"; aws iam list-mfa-
-devices --user-name $line; echo -e "\n--------------------------
+while IFS= read -r line; do echo -e "$line\n"; aws iam list-mfa-devices --user-name $line; \ 
 
-"; done < dumped_users.txt
+echo -e "\n--------------------------"; done < dumped_users.txt
 
 echo -e "\n[*] MFA assessment completed.\n"
 
