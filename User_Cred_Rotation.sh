@@ -7,6 +7,8 @@ rotation policy.
 Obtaining this information is useful because it will give an audit of how 
 often the rotation of password and access keys occurs.
 
+Author: Emeka Michael Nzeopara
+
 '
 time_map=$(date +"%m-%d-%Y");
 
