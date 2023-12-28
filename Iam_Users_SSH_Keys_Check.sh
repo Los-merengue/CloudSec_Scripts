@@ -1,9 +1,13 @@
 #! /bin/bash
 
 :'
-This script is useful for automating the dumping process of IAM users.
-It simply gives an overview of the users that have virtual MFA devices
-configured.
+This script is useful for auditing the SSH Keys in the following ways:
+- Which  IAM accounts are using SSH keys
+- Which SSH keys are active and inactive
+- The SSH keys rotation and others
+
+It is essential to use this command so that unused credentials and resources
+will be cleaned to prevent an extra vector of security flaws
 
 It was originally authored by: Aditya K Sood
 
