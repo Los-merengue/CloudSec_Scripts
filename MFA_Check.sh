@@ -32,7 +32,7 @@ else
     echo -e "[*] An error in the creation of the file"
 fi
 
-echo -e "\n[] Checking the Multifactor authentication for dumped IAM users \n"
+echo -e "\n[*] Checking the Multifactor authentication for dumped IAM users \n"
 
 while IFS= read -r line; do echo -e "$line\n"; aws iam list-mfa-
 devices --user-name $line; echo -e "\n--------------------------
@@ -44,4 +44,5 @@ echo -e "\n[*] MFA assessment completed.\n"
 echo -e "[*] Checking if any virtual MFA devices configured in the account.\n"
 
 aws iam list-virtual-mfa-devices
-echo -e "[] script executed successfully. \n"
+
+echo -e "[*] script executed successfully. \n"
