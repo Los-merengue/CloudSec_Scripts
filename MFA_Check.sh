@@ -20,6 +20,8 @@ echo -e "[*] Dumping the IAM Users with - username, UserId, Last_Used Password a
 
 aws iam list-users --output table --query 'User[*].[UserName,UserId,PasswordLastUsed,Arn]'
 
+# Dump this same information in a text file
+
 echo -e "[*] Dumping the list of usernames to text file : dumped_users.txt \n"
 
 aws iam list-users --output text --query 'Users[].[UserName]' > dumped_users.txt
