@@ -30,7 +30,7 @@ ers to restrict the over-permissive access.
 - Follow the principle of least privileges and only allow a minimal set of
 privileges to perform the required operations.
 
-- Restrict the use of wild characters () to enable public and anonymous
+- Restrict the use of wild characters (*) to enable public and anonymous
 access to interact with different IAM entities by insecure access permis-
 sion policies.
 
