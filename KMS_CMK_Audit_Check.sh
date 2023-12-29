@@ -18,3 +18,23 @@ used by KMS.
 Author: Emeka Michael Nzeopara
 
 '
+
+time_map=$(date +"%m-%d-%Y");
+
+echo -e "[*] Starting script execution at: $time_map\n"
+
+# Obtaining the KMS TargetKeyId with the below command
+
+echo -e "[*]Getting the KMS Target Key ID /n"
+
+aws kms list-aliases --region us-west-1 --query 'Aliases[*].TargetKeyId' --text > KMS.txt
+
+FILE=KMS.txt
+
+# Dump the Policy that is used with this KMS Target Key
+
+echo -e "[*] Getting the Policy of the KMS Key"
+
+aws kms get-key-policy --region us-west-1 --key-id $FILE --policy-name default
+
+echo -e "[*]=====COMPLETED EXECUTION OF THE PROGRAM=====[*]\n"
