@@ -1,0 +1,55 @@
+- Avoid the use and sharing of root privilege accounts for standard cloud
+operations.
+ 
+- Create individual IAM accounts for users and services to access cloud
+resources.
+ 
+- Use groups to dissect the identities based on requirements and assign
+access permissions accordingly.
+ 
+
+- Ensure the MFA security check is in place to avoid online attacks such
+as phishing, credential stuffing, and brute-force.
+
+- Make sure to implement audit review guidelines to check the creden-
+tials’ state after three months. Remove unused credentials, roles, and
+service accounts.
+ 
+- Enforce the credential rotation policy to rotate the password and keys at
+regular intervals, at least every three months.
+
+- Implement strong and complex credential policy to allow only strong
+passwords and keys.
+
+- Restrict access to only trusted entities by defining the role trust policy
+attached to IAM roles.
+
+- Avoid the use of dangerous permissions for the IAM roles and IAM us-
+ers to restrict the over-permissive access.
+
+- Follow the principle of least privileges and only allow a minimal set of
+privileges to perform the required operations.
+
+- Restrict the use of wild characters () to enable public and anonymous
+access to interact with different IAM entities by insecure access permis-
+sion policies.
+
+- Review the policies to avoid confused deputy problems by implement-
+ing explicit conditions to verify the clauses.
+
+- Always use cryptographically secure random numbers for generating
+tokens and identifiers.
+
+- For cross-account access:
+• Make sure to verify the trusted entity in the role trust policy.
+• Use the External Id parameter to verify the third-party association
+before granting access.
+
+- Always use secure cryptographic ciphers and strong keys while creating
+and deploying SSL/TLS certificates that different cloud services use.
+
+- Configure blacklists and whitelists as required to restrict access to criti-
+cal cloud components from unauthorized users.
+
+You can also build policies and procedures using above recommenda-
+tions to incorporate these as part of DevOps lifecycle.
