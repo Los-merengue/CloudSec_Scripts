@@ -37,4 +37,12 @@ echo -e "[*] Getting the Policy of the KMS Key"
 
 aws kms get-key-policy --region us-west-1 --key-id $FILE --policy-name default
 
+# Get the information of the CMK to verify it configuration with who manages the CMK.
+# A Critical aspect to look here is which among AWSOwned, Customer or AWS is managing 
+# the CMK. This will be good to understand the vulnerability involved.
+
+echo -e "[*] Obtaining the Descriptive Info of KMS key and also the Configuration of the CMK"
+
+aws kms describe-key --key-id $FILE
+
 echo -e "[*]=====COMPLETED EXECUTION OF THE PROGRAM=====[*]\n"
