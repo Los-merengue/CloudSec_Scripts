@@ -53,3 +53,13 @@ cal cloud components from unauthorized users.
 
 You can also build policies and procedures using above recommenda-
 tions to incorporate these as part of DevOps lifecycle.
+
+## Some Metrics you may need to know that could be indicator of compromise involve
+
+- CPU Usage Metrics:
+
+Spikes in CPU usage not that is not explained might indicate active ransomware encryptioning or cryptomining.
+
+- Network Logs and Metrics
+
+Denied 
