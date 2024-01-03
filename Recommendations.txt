@@ -75,4 +75,8 @@ or an attacker in the process of stealing data.
 If your database start going crazy, that may indicate that an attacker is stealing large amount of data. If
 the message queue start going crazy, it may mean that an attacker is part of the system.
 
-- 
+- Platform Service Logs and Metrics
+
+For example, platform like kubernetes have a way of turning on audit logs which can be directed to one
+collection point. Understanding how to use all this platform for auditing can be of great use to the security
+posture of the infrastructure.
