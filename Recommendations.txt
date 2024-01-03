@@ -62,4 +62,5 @@ Spikes in CPU usage not that is not explained might indicate active ransomware e
 
 - Network Logs and Metrics
 
-Denied 
+Logging service within the cloud provide flow logs - which are accepted and denied traffic. Denied traffic 
+when the source is your own could indicate a misconfiguration or an attack and this should be investigated
