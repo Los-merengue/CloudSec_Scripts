@@ -64,3 +64,15 @@ Spikes in CPU usage not that is not explained might indicate active ransomware e
 
 Logging service within the cloud provide flow logs - which are accepted and denied traffic. Denied traffic 
 when the source is your own could indicate a misconfiguration or an attack and this should be investigated
+
+- Storage Input/Output Metrics
+
+A spike in I/O not explained by increase usage might indicate active ransomware, a denial-of-service attack
+or an attacker in the process of stealing data.
+
+- Metrics on Request made to Platform components, such as Databases or Message Queue
+
+If your database start going crazy, that may indicate that an attacker is stealing large amount of data. If
+the message queue start going crazy, it may mean that an attacker is part of the system.
+
+- 
