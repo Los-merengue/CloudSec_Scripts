@@ -99,3 +99,6 @@ to have all log access turned on. Examples of unusual activity includes
 Authentication or Authorization failures on secrets server, which may indicate an attack
 An unusual amount of activity for secrets retrieval
 The use of administrative credentials
+
+- NB: Always note that it is good practice to retain most logs for at least a period of one year and longer
+retention times can be helpful in investigating security incidents
