@@ -102,3 +102,13 @@ The use of administrative credentials
 
 - NB: Always note that it is good practice to retain most logs for at least a period of one year and longer
 retention times can be helpful in investigating security incidents
+
+- Log parser pulls specific pieces of information (fields) out of the different types of events.
+Some examples of how the log parsers work includes
+
+In OSes the parser recognizes the timestamp, the name of the generated event and the event text. For example
+in a failed login event, the parser can recognize the IP address from which the login was attempted.
+In Firewall logs, the parser will recognize the timestamp, source IP address, destination IP address, and 
+accepted/denied result
+For antivirus logs, the parser will recognize the timestamp, hostname, and event details such as a failed 
+update or the discovery of malware.
