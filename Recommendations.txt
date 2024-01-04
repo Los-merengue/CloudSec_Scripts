@@ -91,3 +91,11 @@ how this attacks can be mitigated with settings of the controls.
 Middleware such as database, queue manager and application server will need to have the logging and Metrics
 collection to be turn on. Especially activities that happens which originates from a privilege user. This is
 usually a good place to consider Attribute based Access Control (ABAC)
+
+- Secrets server
+A secrets server which could be any piece of informaton that is used for authentication or authorization, needs
+to have all log access turned on. Examples of unusual activity includes
+
+Authentication or Authorization failures on secrets server, which may indicate an attack
+An unusual amount of activity for secrets retrieval
+The use of administrative credentials
