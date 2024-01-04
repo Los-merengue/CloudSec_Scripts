@@ -112,3 +112,7 @@ In Firewall logs, the parser will recognize the timestamp, source IP address, de
 accepted/denied result
 For antivirus logs, the parser will recognize the timestamp, hostname, and event details such as a failed 
 update or the discovery of malware.
+
+- There is a concept of storage that most systems are aware of, these are known as hot and cold storage. Hot 
+storage can be queried instantly, whereas cold storage may need to be retrieved and reloaded before it can be
+searched.
