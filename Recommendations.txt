@@ -86,3 +86,8 @@ posture of the infrastructure.
 Using the CIS Benchmarks and vendor provided documents for common attacks is a good way to get started in 
 mitigating these problems. For example, Miccrosoft has a document describing the Pass-the-Hash Attack and 
 how this attacks can be mitigated with settings of the controls.
+
+- Middleware Logs
+Middleware such as database, queue manager and application server will need to have the logging and Metrics
+collection to be turn on. Especially activities that happens which originates from a privilege user. This is
+usually a good place to consider Attribute based Access Control (ABAC)
