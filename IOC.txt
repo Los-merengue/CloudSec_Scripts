@@ -1,0 +1,33 @@
+• “Database traffic is up 200% from the monthly average. Maybe the application is
+just really popular right now, but is someone systematically stealing our data?”
+
+• “We just saw an outbound connection to an IP address that has been used by a
+known threat actor recently, according to this threat intelligence feed. Is that a
+compromised system talking to a command-and-control server?”
+
+• “There were 150 failed login attempts on an account, followed by a success. Is
+that a successful brute-force attack?”
+
+• “We saw a single failed login attempt on 300 different accounts, followed by a
+success on account #301. Is that a successful password spraying attack?”
+
+• “A port scan was followed by a lot of traffic from a port that hasn’t been used in
+months. Port scans happen all the time, but perhaps a vulnerable service was
+found and compromised?”
+
+• “John doesn’t normally log in at 3:00 AM ET, or from that country. Maybe that’s
+not really John?”
+
+• “Three different accounts logged in from the same system over the course of 30
+minutes. It seems unlikely all of those people are actually using that system, so
+maybe the system and those accounts are compromised?”
+
+• “A new administrative account was just created outside of normal business hours.
+Maybe someone’s working late, but maybe there’s an issue?”
+
+• “Someone was just added to the administrator group. That’s a rare event, so
+shouldn’t we check on it?”
+
+• “Why are there firewall denies with an internal system as the source? Either
+something is misconfigured or there’s an unauthorized user trying to move
+around the network.”
