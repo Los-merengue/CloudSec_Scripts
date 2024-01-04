@@ -80,3 +80,9 @@ the message queue start going crazy, it may mean that an attacker is part of the
 For example, platform like kubernetes have a way of turning on audit logs which can be directed to one
 collection point. Understanding how to use all this platform for auditing can be of great use to the security
 posture of the infrastructure.
+
+- Operating System Logs and Metrics
+
+Using the CIS Benchmarks and vendor provided documents for common attacks is a good way to get started in 
+mitigating these problems. For example, Miccrosoft has a document describing the Pass-the-Hash Attack and 
+how this attacks can be mitigated with settings of the controls.
