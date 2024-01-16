@@ -116,3 +116,5 @@ update or the discovery of malware.
 - There is a concept of storage that most systems are aware of, these are known as hot and cold storage. Hot 
 storage can be queried instantly, whereas cold storage may need to be retrieved and reloaded before it can be
 searched.
+
+- 
