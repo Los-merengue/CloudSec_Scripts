@@ -34,3 +34,7 @@ echo ${#my_array[2]}
 [[ -x ${file} ]] #True if file exists and is executable
 
 [[ -L ${file} ]] #True if file exists and is a symbolic link
+
+[[ -v ${varname} ]] #True if the shell variable varname is set (has been assigned a value)
+
+[[ -z ${string} ]] #True if the length of the string is zero
