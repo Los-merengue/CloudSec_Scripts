@@ -27,4 +27,4 @@ echo ${#my_array[2]}
 
 [[ -r ${file} ]] #True if file exists and is readable
 
-[[ -s ${file} ]]
+[[ -s ${file} ]] #True if file exists and has a size greater than zero
