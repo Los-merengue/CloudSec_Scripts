@@ -18,3 +18,5 @@ echo ${#my_array[2]}
 [[ -c ${file} ]] #True if file exists and is a character special file
 
 [[ -d ${file} ]] #True if file exists and is a directory
+
+[[ -e ${file} ]] #True if file exists
