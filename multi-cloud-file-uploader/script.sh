@@ -22,3 +22,5 @@ echo ${#my_array[2]}
 [[ -e ${file} ]] #True if file exists
 
 [[ -f ${file} ]] #True if file exists and is a regular file
+
+[[ -h ${file} ]] #True if file exists and is a symbolic link
