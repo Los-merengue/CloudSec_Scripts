@@ -8,3 +8,4 @@ echo ${letters}
 echo ${my_array[3]:0:7}
 
 echo ${#my_array[2]}
+
