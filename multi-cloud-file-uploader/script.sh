@@ -40,3 +40,11 @@ echo ${#my_array[2]}
 [[ -z ${string} ]] #True if the length of the string is zero
 
 [[ -n ${string} ]] #True if the length of the string is non-zero
+
+[[ ${string1} == ${string2} ]] #True if the strings are equal the '[[' make sure there is pattern matching
+
+[[ ${string1} != ${string2} ]] #True if the strings are not equal
+
+[[ ${string1} < ${string2} ]] #True if string1 sorts before string2 lexicographically
+
+[[ ${string1} > ${string2} ]] #True if string1 sorts after string2 lexicographically
