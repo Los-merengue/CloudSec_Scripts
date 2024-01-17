@@ -9,3 +9,11 @@ echo ${my_array[3]:0:7}
 
 echo ${#my_array[2]}
 
+# File expressions
+
+[[ -a ${file} ]] #True if file exists
+
+[[ -b ${file} ]] #True if file exists and is a block special file
+
+[[ -c ${file} ]] #True if file exists and is a character special file
+
