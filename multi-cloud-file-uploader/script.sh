@@ -30,3 +30,7 @@ echo ${#my_array[2]}
 [[ -s ${file} ]] #True if file exists and has a size greater than zero
 
 [[ -w ${file} ]] #True if file exists and is writable
+
+[[ -x ${file} ]] #True if file exists and is executable
+
+[[ -L ${file} ]] #True if file exists and is a symbolic link
