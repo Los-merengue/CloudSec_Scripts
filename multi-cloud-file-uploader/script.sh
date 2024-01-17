@@ -38,3 +38,5 @@ echo ${#my_array[2]}
 [[ -v ${varname} ]] #True if the shell variable varname is set (has been assigned a value)
 
 [[ -z ${string} ]] #True if the length of the string is zero
+
+[[ -n ${string} ]] #True if the length of the string is non-zero
