@@ -20,3 +20,5 @@ echo ${#my_array[2]}
 [[ -d ${file} ]] #True if file exists and is a directory
 
 [[ -e ${file} ]] #True if file exists
+
+[[ -f ${file} ]] #True if file exists and is a regular file
