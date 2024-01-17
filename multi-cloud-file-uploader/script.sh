@@ -66,3 +66,9 @@ echo ${#my_array[2]}
 [[ test_case_1 ]] && [[ test_case_2 ]] #And
 
 [[ test_case_1 ]] || [[ test_case_2 ]] #Or
+
+#Exit Status Operators
+
+[[ $? -eq 0 ]] #Returns true if the command was successful without any errors
+
+[[ $? -gt 0 ]] #Returns true if the command was not successful or had errors
