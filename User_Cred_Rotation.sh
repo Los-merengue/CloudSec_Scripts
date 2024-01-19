@@ -10,6 +10,7 @@ often the rotation of password and access keys occurs.
 Author: Emeka Michael Nzeopara
 
 '
+
 time_map=$(date +"%m-%d-%Y");
 
 echo -e "[*] Starting User Credentials Rotation Script execution at: $time_map\n"
