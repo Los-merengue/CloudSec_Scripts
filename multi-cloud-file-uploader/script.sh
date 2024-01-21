@@ -9,7 +9,7 @@ echo ${my_array[3]:0:7}
 
 echo ${#my_array[2]}
 
-# File expressions
+### File expressions
 
 [[ -a ${file} ]] #True if file exists
 
