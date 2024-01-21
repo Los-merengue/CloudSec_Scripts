@@ -67,7 +67,7 @@ echo ${#my_array[2]}
 
 [[ test_case_1 ]] || [[ test_case_2 ]] #Or
 
-###Exit Status Operators
+### Exit Status Operators
 
 [[ $? -eq 0 ]] #Returns true if the command was successful without any errors
 
