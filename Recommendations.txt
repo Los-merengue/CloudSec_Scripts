@@ -116,8 +116,3 @@ update or the discovery of malware.
 - There is a concept of storage that most systems are aware of, these are known as hot and cold storage. Hot 
 storage can be queried instantly, whereas cold storage may need to be retrieved and reloaded before it can be
 searched.
-
-Please tell us about your background
-What about the fellowship inspired you to apply, and what are you hoping to gain from the experience and community 
-
-How do I envisioned myself being a giver in the climatbase fellowship
