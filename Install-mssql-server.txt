@@ -9,14 +9,14 @@ I am running typically under as SU so do not require sudo infront.
 
 apt update
 
-apt install gnupg2 apt-transport-https wget curl -y
 
 wget -q -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
 
 
 Now enter the command below to add the MSSQL Server repository to your Debian system.
  
-Because Microsoft did not provide the MSSQL Server package for Debian distribution, you will be using the MSSQL Server package for Ubuntu.
+Because Microsoft did not provide the MSSQL Server package for Debian distribution, you will be using the MSSQL Server package 
+for Ubuntu.
 
 Run this command (trust me Ubuntu version worked just fine)
 
@@ -123,7 +123,6 @@ wget http://ftp.us.debian.org/debian/pool/main/o/openssl/libssl1.1_1.1.1w-0+deb1
 apt install above downloaded deb file location.
 
 apt update
-
 now try starting sql
 systemctl start mssql-server
 
@@ -206,3 +205,8 @@ If you can support me on Patreon that be awesome..
 https://www.patreon.com/HashTagTNT
 
 Yours Truely
+
+
+sp_configure 'show advanced options', 1; RECONFIGURE; GO sp_configure 'xp_cmdshell';
+
+sp_configure 'show advanced options', 1; RECONFIGURE; GO sp_configure 'xp_cmdshell', 1; RECONFIGURE; GO
