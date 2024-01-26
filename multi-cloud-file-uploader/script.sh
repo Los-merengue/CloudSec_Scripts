@@ -81,3 +81,8 @@ then
 fi
 
 read -p "What is your name? " name 
+
+if [[ -z ${name} ]]
+then
+    echo "You didn't enter any name, please enter your name!"
+fi
