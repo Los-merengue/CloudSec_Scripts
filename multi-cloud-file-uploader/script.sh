@@ -72,3 +72,6 @@ echo ${#my_array[2]}
 [[ $? -eq 0 ]] #Returns true if the command was successful without any errors
 
 [[ $? -gt 0 ]] #Returns true if the command was not successful or had errors
+
+echo "====================================================================="
+
