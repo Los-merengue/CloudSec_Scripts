@@ -82,6 +82,8 @@ fi
 
 read -p "What is your name? " name 
 
+#The code will print the echo message if nothing was inputted int the variable ${name}
+
 if [[ -z ${name} ]]
 then
     echo "You didn't enter any name, please enter your name!"
