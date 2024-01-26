@@ -79,3 +79,5 @@ if [[ some_test ]]
 then
     <commands>
 fi
+
+read -p "What is your name? " name 
